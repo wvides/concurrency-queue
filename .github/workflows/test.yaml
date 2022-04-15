@@ -1,0 +1,12 @@
+name: Directory Diff
+on:
+  pull_request:
+jobs:
+  example:
+    environment: sample
+    concurrency: development
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Sleep
+        run: sleep 60
